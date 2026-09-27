@@ -13,7 +13,7 @@ const { updateUserConfigInMongoDB, getUserConfigFromMongoDB } = require('../lib/
 const more = String.fromCharCode(8206);
 const readMore = more.repeat(4001);
 let botStartTime = Date.now();
-const ALIVE_IMG = config.BOT_IMAGE || `https://endroid-cdn.koyeb.app/endroid/smd.jpg`;
+const ALIVE_IMG = config.BOT_IMAGE || `https://files.catbox.moe/kunzpz.png`;
 const OWNER_PATH = path.join(__dirname, "../assets/sudo.json");
 
 // Font system
@@ -169,7 +169,7 @@ bandah({
       const bot = conn.user.id.split(":")[0];
       const botConfig = await getUserConfigFromMongoDB(bot)
 const ownername = botConfig.OWNER_NAME || "ENDROID";        const botname = botConfig.BOT_NAME || "Endroid-MD";
-        const menuimg = botConfig.MENU_IMG || "https://endroid-cdn.koyeb.app/endroid/smd.jpg"
+        const menuimg = botConfig.MENU_IMG || "https://files.catbox.moe/kunzpz.png"
         const mode = botConfig.MODE || "public";
         const prefix = botConfig.PREFIX || ".";
         const caption = botConfig.CAPTION || "POWERED BY ENDROID";
@@ -182,7 +182,7 @@ const ownername = botConfig.OWNER_NAME || "ENDROID";        const botname = botC
 
     const uptime = `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
 
-    const audioUrl = "https://endroid-cdn.koyeb.app/endroid/alive.mp3";
+    const audioUrl = null;
     const thumbUrl = "https://endroid-cdn.koyeb.app/media/bot_1767321466701.jpg";
 
     await conn.sendMessage(
@@ -238,7 +238,7 @@ async (conn, mek, m, { reply }) => {
 const bot = conn.user.id.split(":")[0];
       const botConfig = await getUserConfigFromMongoDB(bot);
       const ownername = botConfig.OWNER_NAME || "ENDROID";        const botname = botConfig.BOT_NAME || "Endroid-MD";
-        const menuimg = botConfig.MENU_IMG || "https://endroid-cdn.koyeb.app/endroid/smd.jpg"
+        const menuimg = botConfig.MENU_IMG || "https://files.catbox.moe/kunzpz.png"
         const mode = botConfig.MODE || "public";
         const prefix = botConfig.PREFIX || ".";
         const caption = botConfig.CAPTION || "POWERED BY ENDROID";
@@ -275,7 +275,7 @@ async (conn, mek, m, { from, reply }) => {
       const bot = conn.user.id.split(":")[0];
       const botConfig = await getUserConfigFromMongoDB(bot);
       const ownername = botConfig.OWNER_NAME || "ENDROID";        const botname = botConfig.BOT_NAME || "Endroid-MD";
-        const menuimg = botConfig.MENU_IMG || "https://endroid-cdn.koyeb.app/endroid/smd.jpg"
+        const menuimg = botConfig.MENU_IMG || "https://files.catbox.moe/kunzpz.png"
         const mode = botConfig.MODE || "public";
         const prefix = botConfig.PREFIX || ".";
         const caption = botConfig.CAPTION || "POWERED BY ENDROID";
@@ -360,7 +360,7 @@ const bot = conn.user.id.split(":")[0];
 
             const version = await getBotVersion();
             const ownername = botConfig.OWNER_NAME || "ENDROID";        const botname = botConfig.BOT_NAME || "Endroid-MD";
-        const menuimg = botConfig.MENU_IMG || "https://endroid-cdn.koyeb.app/endroid/smd.jpg"
+        const menuimg = botConfig.MENU_IMG || "https://files.catbox.moe/kunzpz.png"
         const mode = botConfig.MODE || "public";
         const prefix = botConfig.PREFIX || ".";
         
@@ -491,7 +491,7 @@ const audioUrl = getAudio.data[Math.floor(Math.random() * getAudio.data.length)]
         const version = await getBotVersion();
         const totalCommands = commands.filter(bandah => bandah.pattern).length;
         const ownername = botConfig.OWNER_NAME || "ENDROID";        const botname = botConfig.BOT_NAME || "Endroid-MD";
-        const menuimg = botConfig.MENU_IMG || "https://endroid-cdn.koyeb.app/endroid/smd.jpg"
+        const menuimg = botConfig.MENU_IMG || "https://files.catbox.moe/kunzpz.png"
         const mode = botConfig.MODE || "public";
         const prefix = botConfig.PREFIX || ".";
         
@@ -700,7 +700,7 @@ async (conn, mek, m, { from, reply }) => {
       const bot = conn.user.id.split(":")[0];
       const botConfig = await getUserConfigFromMongoDB(bot);
       const ownername = botConfig.OWNER_NAME || "ENDROID";        const botname = botConfig.BOT_NAME || "Endroid-MD";
-        const menuimg = botConfig.MENU_IMG || "https://endroid-cdn.koyeb.app/endroid/smd.jpg"
+        const menuimg = botConfig.MENU_IMG || "https://files.catbox.moe/kunzpz.png"
         const mode = botConfig.MODE || "public";
         const prefix = botConfig.PREFIX || ".";
         
@@ -940,7 +940,7 @@ async (conn, mek, m, { from, reply }) => {
 const bot = conn.user.id.split(":")[0];
       const botConfig = await getUserConfigFromMongoDB(bot)
       const ownername = botConfig.OWNER_NAME || "ENDROID";        const botname = botConfig.BOT_NAME || "Endroid-MD";
-        const menuimg = botConfig.MENU_IMG || "https://endroid-cdn.koyeb.app/endroid/smd.jpg"
+        const menuimg = botConfig.MENU_IMG || "https://files.catbox.moe/kunzpz.png"
         const mode = botConfig.MODE || "public";
         const prefix = botConfig.PREFIX || ".";
         const ownerNumber = botConfig.OWNER_NUMBER || "923253617422";
@@ -1004,7 +1004,7 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
 const bot = conn.user.id.split(":")[0];
       const botConfig = await getUserConfigFromMongoDB(bot);
       const ownername = botConfig.OWNER_NAME || "ENDROID";        const botname = botConfig.BOT_NAME || "Endroid-MD";
-        const menuimg = botConfig.MENU_IMG || "https://endroid-cdn.koyeb.app/endroid/smd.jpg"
+        const menuimg = botConfig.MENU_IMG || "https://files.catbox.moe/kunzpz.png"
         const mode = botConfig.MODE || "public";
         const prefix = botConfig.PREFIX || ".";
         
@@ -1069,7 +1069,7 @@ async (conn, mek, m, { from, reply }) => {
         const botConfig = await getUserConfigFromMongoDB(bot);
         
         const ownername = botConfig.OWNER_NAME || "ENDROID";        const botname = botConfig.BOT_NAME || "Endroid-MD";
-        const menuimg = botConfig.MENU_IMG || "https://endroid-cdn.koyeb.app/endroid/smd.jpg"
+        const menuimg = botConfig.MENU_IMG || "https://files.catbox.moe/kunzpz.png"
         const mode = botConfig.MODE || "public";
         const prefix = botConfig.PREFIX || ".";
         
@@ -1115,7 +1115,7 @@ async (conn, mek, m, { from, reply }) => {
 
         // Send with image
         await conn.sendMessage(from, {
-            image: { url: botConfig.MENU_IMG || 'https://endroid-cdn.koyeb.app/edith/alive.jpg' },
+            image: { url: botConfig.MENU_IMG || 'https://files.catbox.moe/kunzpz.png' },
             caption: caption,
             contextInfo: { 
                 mentionedJid: [m.sender],

@@ -21,7 +21,7 @@ async function sendIslamicAudio(conn, from, mek, audioPath, title, body, reply) 
         externalAdReply: {
           title: title,
           body: body,
-          thumbnailUrl: "https://endroid-cdn.koyeb.app/edith/alive.jpg",
+          thumbnailUrl: "https://files.catbox.moe/kunzpz.png",
           mediaType: 1,
           renderLargerThumbnail: true
         }

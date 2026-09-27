@@ -25,7 +25,7 @@ try {
     const botname = botConfig.BOT_NAME || "Endroid-MD";
    const mode = botConfig.MODE || "public";
    const prefix = botConfig.PREFIX || ".";
-   const menuimg = botConfig.MENU_IMG || "https://endroid-cdn.koyeb.app/endroid/smd.jpg";
+   const menuimg = botConfig.MENU_IMG || "https://files.catbox.moe/kunzpz.png";
    const caption = botConfig.CAPTION || "Powered By Endroid";
 
 const user = m.pushName|| sender.split('@')[0];

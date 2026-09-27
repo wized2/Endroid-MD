@@ -181,7 +181,7 @@ cmd({
           body: "View channel newsletter",
           previewType: "PHOTO",
           thumbnailUrl: metadata.preview
-            ? `https://endroid-cdn.koyeb.app/endroid/smd.jpg`
+            ? `https://files.catbox.moe/kunzpz.png`
             : undefined,
           sourceUrl: `https://whatsapp.com/channel/${inviteId}` // only for preview
         }

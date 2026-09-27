@@ -72,14 +72,16 @@ GOODBYE: "true",
     // ===========================================================
     // 7. IMAGES & LIENS
     // ===========================================================
-    IMAGE_PATH: 'https://files.catbox.moe/kunzpz.png',
+    IMAGE_PATH: process.env.IMAGE_PATH || 'https://files.catbox.moe/kunzpz.png',
+    MENU_IMG: process.env.MENU_IMG || process.env.IMAGE_PATH || 'https://files.catbox.moe/kunzpz.png',
+    BOT_IMAGE: process.env.BOT_IMAGE || process.env.MENU_IMG || 'https://files.catbox.moe/kunzpz.png',
     CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbBXuGe4yltMLngL582d',
     
     // ===========================================================
     // 8. EXTERNAL API (Optionnel)
     // ===========================================================
     TELEGRAM_BOT_TOKEN: process.env.TELEGRAM_BOT_TOKEN || '7214172448:AAHGqSgaw-zGVPZWvl8msDOVDhln-9kExas',
-    TELEGRAM_CHAT_ID: process.env.  TELEGRAM_CHAT_ID || '+923078071982'
+    TELEGRAM_CHAT_ID: process.env.TELEGRAM_CHAT_ID || '+923078071982'
     
 };
   
