@@ -1078,7 +1078,7 @@ async (conn, mek, m, { from, reply }) => {
             name: "Endroid-MD",
             owner: "wized2",
             url: "https://github.com/wized2/Endroid-MD",
-            description: "Mini version of SMD WhatsApp Bot",
+            description: "Mini version of Endroid-MD WhatsApp Bot",
             stars: "⭐ Star on GitHub",
             forks: "🍴 Fork to deploy"
         };

@@ -1949,7 +1949,7 @@ bandah({
         const p = data.proxy
 
         const msg = `
-✅ *PROXY FOUND SUCCESSFULLY! SMD*
+✅ *PROXY FOUND SUCCESSFULLY! Endroid-MD*
 
 📍 *IP Address:* ${p.ip}
 🚪 *Port:* ${p.port}
