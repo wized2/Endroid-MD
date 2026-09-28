@@ -13,7 +13,7 @@ const { updateUserConfigInMongoDB, getUserConfigFromMongoDB } = require('../lib/
 const more = String.fromCharCode(8206);
 const readMore = more.repeat(4001);
 let botStartTime = Date.now();
-const ALIVE_IMG = config.BOT_IMAGE || `https://files.catbox.moe/kunzpz.png`;
+const ALIVE_IMG = config.BOT_IMAGE || `https://i.imgur.com/JQ8p5bB.jpeg`;
 const OWNER_PATH = path.join(__dirname, "../assets/sudo.json");
 
 // Font system
@@ -169,7 +169,7 @@ bandah({
       const bot = conn.user.id.split(":")[0];
       const botConfig = await getUserConfigFromMongoDB(bot)
 const ownername = botConfig.OWNER_NAME || "ENDROID";        const botname = botConfig.BOT_NAME || "Endroid-MD";
-        const menuimg = botConfig.MENU_IMG || "https://files.catbox.moe/kunzpz.png"
+        const menuimg = botConfig.MENU_IMG || "https://i.imgur.com/JQ8p5bB.jpeg"
         const mode = botConfig.MODE || "public";
         const prefix = botConfig.PREFIX || ".";
         const caption = botConfig.CAPTION || "POWERED BY ENDROID";
@@ -182,7 +182,7 @@ const ownername = botConfig.OWNER_NAME || "ENDROID";        const botname = botC
 
     const uptime = `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
 
-    const audioUrl = null;
+    const audioUrl = "https://endroid-cdn.koyeb.app/endroid/alive.mp3";
     const thumbUrl = "https://endroid-cdn.koyeb.app/media/bot_1767321466701.jpg";
 
     await conn.sendMessage(
@@ -209,7 +209,7 @@ const ownername = botConfig.OWNER_NAME || "ENDROID";        const botname = botC
             body: `⚡ ${uptime}`,
             mediaType: 1,
             thumbnailUrl: thumbUrl, // ✅ THUMBNAIL ADDED
-            sourceUrl: config.REPO || "https://github.com/wized2",
+            sourceUrl: config.REPO || "https://github.com/iTx-Sarkar",
             showAdAttribution: true,
             renderLargerThumbnail: true
           }
@@ -238,7 +238,7 @@ async (conn, mek, m, { reply }) => {
 const bot = conn.user.id.split(":")[0];
       const botConfig = await getUserConfigFromMongoDB(bot);
       const ownername = botConfig.OWNER_NAME || "ENDROID";        const botname = botConfig.BOT_NAME || "Endroid-MD";
-        const menuimg = botConfig.MENU_IMG || "https://files.catbox.moe/kunzpz.png"
+        const menuimg = botConfig.MENU_IMG || "https://i.imgur.com/JQ8p5bB.jpeg"
         const mode = botConfig.MODE || "public";
         const prefix = botConfig.PREFIX || ".";
         const caption = botConfig.CAPTION || "POWERED BY ENDROID";
@@ -275,7 +275,7 @@ async (conn, mek, m, { from, reply }) => {
       const bot = conn.user.id.split(":")[0];
       const botConfig = await getUserConfigFromMongoDB(bot);
       const ownername = botConfig.OWNER_NAME || "ENDROID";        const botname = botConfig.BOT_NAME || "Endroid-MD";
-        const menuimg = botConfig.MENU_IMG || "https://files.catbox.moe/kunzpz.png"
+        const menuimg = botConfig.MENU_IMG || "https://i.imgur.com/JQ8p5bB.jpeg"
         const mode = botConfig.MODE || "public";
         const prefix = botConfig.PREFIX || ".";
         const caption = botConfig.CAPTION || "POWERED BY ENDROID";
@@ -360,7 +360,7 @@ const bot = conn.user.id.split(":")[0];
 
             const version = await getBotVersion();
             const ownername = botConfig.OWNER_NAME || "ENDROID";        const botname = botConfig.BOT_NAME || "Endroid-MD";
-        const menuimg = botConfig.MENU_IMG || "https://files.catbox.moe/kunzpz.png"
+        const menuimg = botConfig.MENU_IMG || "https://i.imgur.com/JQ8p5bB.jpeg"
         const mode = botConfig.MODE || "public";
         const prefix = botConfig.PREFIX || ".";
         
@@ -480,7 +480,7 @@ async (conn, mek, m, { from, pushname, reply }) => {
         const bot = conn.user.id.split(":")[0];
       const botConfig = await getUserConfigFromMongoDB(bot)
     
-    const getAudio = await axios.get("https://raw.githubusercontent.com/wized2/Json-Data/refs/heads/main/menu/audio.json");
+    const getAudio = await axios.get("https://raw.githubusercontent.com/iTx-Sarkar/Json-Data/refs/heads/main/menu/audio.json");
 
 const audioUrl = getAudio.data[Math.floor(Math.random() * getAudio.data.length)];
 
@@ -491,7 +491,7 @@ const audioUrl = getAudio.data[Math.floor(Math.random() * getAudio.data.length)]
         const version = await getBotVersion();
         const totalCommands = commands.filter(bandah => bandah.pattern).length;
         const ownername = botConfig.OWNER_NAME || "ENDROID";        const botname = botConfig.BOT_NAME || "Endroid-MD";
-        const menuimg = botConfig.MENU_IMG || "https://files.catbox.moe/kunzpz.png"
+        const menuimg = botConfig.MENU_IMG || "https://i.imgur.com/JQ8p5bB.jpeg"
         const mode = botConfig.MODE || "public";
         const prefix = botConfig.PREFIX || ".";
         
@@ -700,7 +700,7 @@ async (conn, mek, m, { from, reply }) => {
       const bot = conn.user.id.split(":")[0];
       const botConfig = await getUserConfigFromMongoDB(bot);
       const ownername = botConfig.OWNER_NAME || "ENDROID";        const botname = botConfig.BOT_NAME || "Endroid-MD";
-        const menuimg = botConfig.MENU_IMG || "https://files.catbox.moe/kunzpz.png"
+        const menuimg = botConfig.MENU_IMG || "https://i.imgur.com/JQ8p5bB.jpeg"
         const mode = botConfig.MODE || "public";
         const prefix = botConfig.PREFIX || ".";
         
@@ -940,7 +940,7 @@ async (conn, mek, m, { from, reply }) => {
 const bot = conn.user.id.split(":")[0];
       const botConfig = await getUserConfigFromMongoDB(bot)
       const ownername = botConfig.OWNER_NAME || "ENDROID";        const botname = botConfig.BOT_NAME || "Endroid-MD";
-        const menuimg = botConfig.MENU_IMG || "https://files.catbox.moe/kunzpz.png"
+        const menuimg = botConfig.MENU_IMG || "https://i.imgur.com/JQ8p5bB.jpeg"
         const mode = botConfig.MODE || "public";
         const prefix = botConfig.PREFIX || ".";
         const ownerNumber = botConfig.OWNER_NUMBER || "923253617422";
@@ -1004,7 +1004,7 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
 const bot = conn.user.id.split(":")[0];
       const botConfig = await getUserConfigFromMongoDB(bot);
       const ownername = botConfig.OWNER_NAME || "ENDROID";        const botname = botConfig.BOT_NAME || "Endroid-MD";
-        const menuimg = botConfig.MENU_IMG || "https://files.catbox.moe/kunzpz.png"
+        const menuimg = botConfig.MENU_IMG || "https://i.imgur.com/JQ8p5bB.jpeg"
         const mode = botConfig.MODE || "public";
         const prefix = botConfig.PREFIX || ".";
         
@@ -1069,22 +1069,22 @@ async (conn, mek, m, { from, reply }) => {
         const botConfig = await getUserConfigFromMongoDB(bot);
         
         const ownername = botConfig.OWNER_NAME || "ENDROID";        const botname = botConfig.BOT_NAME || "Endroid-MD";
-        const menuimg = botConfig.MENU_IMG || "https://files.catbox.moe/kunzpz.png"
+        const menuimg = botConfig.MENU_IMG || "https://i.imgur.com/JQ8p5bB.jpeg"
         const mode = botConfig.MODE || "public";
         const prefix = botConfig.PREFIX || ".";
         
         // Repository details - UPDATE THESE WHEN REPO IS AVAILABLE
         const repoInfo = {
             name: "Endroid-MD",
-            owner: "wized2",
-            url: "https://github.com/wized2/Endroid-MD",
-            description: "Mini version of Endroid-MD WhatsApp Bot",
+            owner: "iTx-Sarkar",
+            url: "https://github.com/iTx-Sarkar/Endroid-MD",
+            description: "Endroid-MD WhatsApp bot",
             stars: "⭐ Star on GitHub",
             forks: "🍴 Fork to deploy"
         };
 
         // Deployment links
-        const deployUrl = "https://endroid.vercel.app";
+        const deployUrl = "https://team-endroid.vercel.app";
         const pairCmd = ".pair";
 
         const caption = `🛠️ *Endroid-MD REPOSITORY*
@@ -1115,7 +1115,7 @@ async (conn, mek, m, { from, reply }) => {
 
         // Send with image
         await conn.sendMessage(from, {
-            image: { url: botConfig.MENU_IMG || 'https://files.catbox.moe/kunzpz.png' },
+            image: { url: botConfig.MENU_IMG || 'https://endroid-cdn.koyeb.app/edith/alive.jpg' },
             caption: caption,
             contextInfo: { 
                 mentionedJid: [m.sender],
@@ -1139,7 +1139,7 @@ async (conn, mek, m, { from, reply }) => {
 
         // Send audio for extra engagement (optional)
         try {
-            const audioResponse = await axios.get("https://raw.githubusercontent.com/wized2/Json-Data/refs/heads/main/menu/audio.json");
+            const audioResponse = await axios.get("https://raw.githubusercontent.com/iTx-Sarkar/Json-Data/refs/heads/main/menu/audio.json");
             const audioUrl = audioResponse.data[Math.floor(Math.random() * audioResponse.data.length)];
             
             await conn.sendMessage(from, {

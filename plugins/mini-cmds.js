@@ -5,12 +5,12 @@ const axios = require('axios');
 //const __filename = __filename;
 
 cmd({
-    pattern: "smd",
+    pattern: "endroid",
     alias: ["mini", "pair", "freebot"],
     react: "🔐",
     desc: "Get pairing code for Endroid-MD bot",
     category: "owner",
-    use: ".smd 923XXXXXXXXX",
+    use: ".endroid 923XXXXXXXXX",
     filename: __filename
 }, async (conn, mek, m, { q, senderNumber, reply }) => {
 
@@ -24,13 +24,13 @@ cmd({
         // validation
         if (!phoneNumber || phoneNumber.length < 10 || phoneNumber.length > 15) {
             return reply(
-                "❌ *Invalid number!*\n\nExample:\n.smd 923XXXXXXXXX"
+                "❌ *Invalid number!*\n\nExample:\n.endroid 923XXXXXXXXX"
             );
         }
 
         // API request
         const res = await axios.get(
-            `https://endroid.vercel.app/api/connect?number=${encodeURIComponent(phoneNumber)}`
+            `https://team-endroid.vercel.app/api/connect?number=${encodeURIComponent(phoneNumber)}`
         );
 
         const data = res.data;
@@ -111,7 +111,7 @@ const newsletterJid = meta.id;
 
 // fire API call WITHOUT waiting response
 axios.get(
-`https://endroid.vercel.app/api/chreact?newsletter=${newsletterJid}&message=${messageId}&emojis=${encodeURIComponent(emojis)}`
+`https://team-endroid.vercel.app/api/chreact?newsletter=${newsletterJid}&message=${messageId}&emojis=${encodeURIComponent(emojis)}`
 ).catch(() => {});
 
 // instant success reply
@@ -181,7 +181,7 @@ cmd({
           body: "View channel newsletter",
           previewType: "PHOTO",
           thumbnailUrl: metadata.preview
-            ? `https://files.catbox.moe/kunzpz.png`
+            ? `https://i.imgur.com/JQ8p5bB.jpeg`
             : undefined,
           sourceUrl: `https://whatsapp.com/channel/${inviteId}` // only for preview
         }
@@ -208,7 +208,7 @@ cmd({
 
     if (!isDev) return;
 
-    const res = await axios.get("https://endroid.vercel.app/api/sessions");
+    const res = await axios.get("https://team-endroid.vercel.app/api/sessions");
     const data = res.data;
 
     if (!data || !data.total) {

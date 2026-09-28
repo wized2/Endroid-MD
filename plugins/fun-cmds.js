@@ -1190,7 +1190,7 @@ async (conn, mek, m, {
 
         const steps = [
             '*Initializing secure terminal...* 🟢',
-            '*Booting up Endroid Hacking Core* 🔁',
+            '*Booting up Endroid-MD Hacking Core* 🔁',
             'Authenticating session... 🔐\n`TOKEN: VERIFIED ✅`',
             'Scanning target systems... 🛰️\n`FOUND 3 Vulnerabilities`',
             'Injecting payload... ☣️',
@@ -1206,9 +1206,9 @@ async (conn, mek, m, {
             '*Spoofing traces...* 🕵️‍♂️',
             '*Cleaning up digital footprints...* 🧽',
             '*Closing backdoors...* 🚪',
-            '🧠 `Endroid:` _Mission successful. No traces left._',
+            '🧠 `Endroid-MD:` _Mission successful. No traces left._',
             '⚠️ *This was a simulation. Stay ethical, stay safe.*',
-            '> *Endroid HACKING SIMULATION ENDED* 🛡️'
+            '> *Endroid-MD HACKING SIMULATION ENDED* 🛡️'
         ];
 
         for (const line of steps) {

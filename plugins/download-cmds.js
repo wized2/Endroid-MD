@@ -71,7 +71,7 @@ cmd({
         const app = data.datalist.list[0];
         const appSize = (app.size / 1048576).toFixed(2); // Convert bytes to MB
 
-        const caption = `*Apk Downloader*\n┃ 📦 *Name:* ${app.name}\n┃ 🏋 *Size:* ${appSize} MB\n┃ 📦 *Package:* ${app.package}\n┃ 📅 *Updated On:* ${app.updated}\n┃ 👨‍💻 *Developer:* ${app.developer.name}\n╰━━━━━━━━━━━━━━━┈⊷\n🔗 *${botConfig.CAPTION || "Powered by Endroid"}*`;
+        const caption = `*Apk Downloader*\n┃ 📦 *Name:* ${app.name}\n┃ 🏋 *Size:* ${appSize} MB\n┃ 📦 *Package:* ${app.package}\n┃ 📅 *Updated On:* ${app.updated}\n┃ 👨‍💻 *Developer:* ${app.developer.name}\n╰━━━━━━━━━━━━━━━┈⊷\n🔗 *${botConfig.CAPTION || "Powered by Endroid-MD"}*`;
 
         await conn.sendMessage(from, { react: { text: "⬆️", key: m.key } });
 
@@ -116,7 +116,7 @@ cmd({
 
         const { title, thumbnail, high } = data.data;
 
-        const caption = `🎬 *Facebook Video Downloader*\n\n📖 *Title:* ${title}\n\n🔰 *${botConfig.CAPTION || "Powered by Endroid"}*`;
+        const caption = `🎬 *Facebook Video Downloader*\n\n📖 *Title:* ${title}\n\n🔰 *${botConfig.CAPTION || "Powered by Endroid-MD"}*`;
 
         await conn.sendMessage(from, {
             video: { url: high },
@@ -197,7 +197,7 @@ cmd({
         }
 
         const { downloadUrl, fileName, fileSize, mimetype } = data.result;
-        const caption = `📥 *GOOGLE DRIVE DOWNLOAD*\n──────────────────\n📄 *Name:* ${fileName}\n📦 *Size:* ${fileSize}\n⚙️ *MIME:* ${mimetype}\n──────────────────\n> © ${botConfig.CAPTION || "Endroid"}* ⚡\n> 👑 DEVELOPER Endroid`;
+        const caption = `📥 *GOOGLE DRIVE DOWNLOAD*\n──────────────────\n📄 *Name:* ${fileName}\n📦 *Size:* ${fileSize}\n⚙️ *MIME:* ${mimetype}\n──────────────────\n> © ${botConfig.CAPTION || "Endroid-MD"}* ⚡\n> 👑 DEVELOPER Endroid-MD`;
 
         if (mimetype.startsWith("image/")) {
             await conn.sendMessage(from, {
@@ -304,7 +304,7 @@ cmd({
         const fileSize = data.data.filesize || "Unknown";
         const mimetype = "application/octet-stream";
 
-        const caption = `📥 *GOOGLE DRIVE DOWNLOAD*\n──────────────────\n📄 *Name:* ${fileName}\n📦 *Size:* ${fileSize}\n⚙️ *MIME:* ${mimetype}\n──────────────────\n> © ${botConfig.CAPTION || "Endroid"}`;
+        const caption = `📥 *GOOGLE DRIVE DOWNLOAD*\n──────────────────\n📄 *Name:* ${fileName}\n📦 *Size:* ${fileSize}\n⚙️ *MIME:* ${mimetype}\n──────────────────\n> © ${botConfig.CAPTION || "Endroid-MD"}`;
 
         await conn.sendMessage(from, {
             document: { url: downloadUrl },
@@ -363,7 +363,7 @@ cmd({
 
         await conn.sendMessage(from, { react: { text: "⬆️", key: m.key } });
 
-        const caption = `*🛡️ MEDIAFIRE DL 🛡️*\n─────────────────────\n📄 *Name:* ${name}\n📦 *Size:* ${size}\n🕒 *Uploaded:* ${date}\n⚙️ *MIME:* ${mime}\n─────────────────────\n📥 *${botConfig.CAPTION || "Powered by Endroid"}*`;
+        const caption = `*🛡️ MEDIAFIRE DL 🛡️*\n─────────────────────\n📄 *Name:* ${name}\n📦 *Size:* ${size}\n🕒 *Uploaded:* ${date}\n⚙️ *MIME:* ${mime}\n─────────────────────\n📥 *${botConfig.CAPTION || "Powered by Endroid-MD"}*`;
 
         if (mime.startsWith("image/")) {
             await conn.sendMessage(from, {
@@ -431,7 +431,7 @@ cmd({
         const title = data.data.title || "TikTok Video";
         const author = data.data.author.nickname;
 
-        const caption = `🎵 *TIKTOK DOWNLOADER*\n\n👤 Author: ${author}\n📝 Title: ${title}\n\n⚡ *${botConfig.CAPTION || "Powered by Endroid"}*`;
+        const caption = `🎵 *TIKTOK DOWNLOADER*\n\n👤 Author: ${author}\n📝 Title: ${title}\n\n⚡ *${botConfig.CAPTION || "Powered by Endroid-MD"}*`;
 
         await conn.sendMessage(from, {
             video: { url: video },
@@ -525,7 +525,7 @@ cmd({
 
         await conn.sendMessage(from, {
             video: { url: res.mp4_hd || res.mp4 },
-            caption: `🎬 TikTok MEGA\n© ${botConfig.CAPTION || "Powered by Endroid"}`,
+            caption: `🎬 TikTok MEGA\n© ${botConfig.CAPTION || "Powered by Endroid-MD"}`,
         }, { quoted: mek });
 
         await conn.sendMessage(from, { react: { text: "✅", key: m.key } });
@@ -598,7 +598,7 @@ cmd({
             return reply("❌ *Media nahi mili!*");
         }
 
-        const caption = `📸 *INSTAGRAM DOWNLOADER*\n\n⚡ *${botConfig.CAPTION || "Powered by Endroid"}*`;
+        const caption = `📸 *INSTAGRAM DOWNLOADER*\n\n⚡ *${botConfig.CAPTION || "Powered by Endroid-MD"}*`;
 
         for (let media of json.data) {
             if (media.type === "video") {
@@ -658,7 +658,7 @@ cmd({
         }
 
         const media = data[0];
-        const caption = `📸 *INSTAGRAM DOWNLOADER V3*\n\n⚡ *${botConfig.CAPTION || "Powered by Endroid"}*`;
+        const caption = `📸 *INSTAGRAM DOWNLOADER V3*\n\n⚡ *${botConfig.CAPTION || "Powered by Endroid-MD"}*`;
 
         await conn.sendMessage(from, {
             video: { url: media.url },
@@ -768,7 +768,7 @@ cmd({
 
         await conn.sendMessage(from, {
             video: { url: res.video },
-            caption: `👨‍💻 Instagram Video\n© ${botConfig.CAPTION || "Powered by Endroid"}`
+            caption: `👨‍💻 Instagram Video\n© ${botConfig.CAPTION || "Powered by Endroid-MD"}`
         }, { quoted: mek });
 
         await conn.sendMessage(from, { react: { text: "✅", key: m.key } });
@@ -839,7 +839,7 @@ cmd({
             return reply("❌ *Media nahi mili!*");
         }
 
-        const caption = `*SNACK•VIDEO DL*\n\n© *${botConfig.CAPTION || "Powered by Endroid"}*`;
+        const caption = `*SNACK•VIDEO DL*\n\n© *${botConfig.CAPTION || "Powered by Endroid-MD"}*`;
 
         await conn.sendMessage(from, {
             video: { url: data.videoUrl },
@@ -873,7 +873,7 @@ cmd({
         const { data } = await api.get(apiUrl);
         
         if (data.status && data.imgUrl) {
-            const caption = `🌌 *Random Wallpaper: ${query}*\n\n> *© ${botConfig.CAPTION || "Powered by Endroid"}*`;
+            const caption = `🌌 *Random Wallpaper: ${query}*\n\n> *© ${botConfig.CAPTION || "Powered by Endroid-MD"}*`;
             await conn.sendMessage(from, { image: { url: data.imgUrl }, caption }, { quoted: m });
             await conn.sendMessage(from, { react: { text: "✅", key: m.key } });
         } else {
@@ -943,7 +943,7 @@ cmd({
         caption += `*📌 Title:* ${title}\n`;
         caption += `*⏱️ Duration:* ${duration}\n`;
         caption += `*🎞️ Quality:* ${best.quality}\n\n`;
-        caption += `*© ${botConfig.CAPTION || "Powered by Endroid"}*`;
+        caption += `*© ${botConfig.CAPTION || "Powered by Endroid-MD"}*`;
 
         let thumbBuffer = null;
         if (thumbnail) {
@@ -1002,7 +1002,7 @@ cmd({
 
         await conn.sendMessage(from, {
             image: { url: mediaUrl },
-            caption: `🧵 *THREADS DOWNLOAD*\n\n📦 *Type:* ${type.toUpperCase()}\n\n━━━━━━━━━━━━━━\n${botConfig.CAPTION || "Powered by Endroid"}`
+            caption: `🧵 *THREADS DOWNLOAD*\n\n📦 *Type:* ${type.toUpperCase()}\n\n━━━━━━━━━━━━━━\n${botConfig.CAPTION || "Powered by Endroid-MD"}`
         }, { quoted: mek });
 
         if (type === "video") {
@@ -1130,7 +1130,7 @@ cmd({
         if (thumb) {
             await conn.sendMessage(from, {
                 image: { url: thumb },
-                caption: `🎵 *${data.title}*\n👤 ${data.artist || searchData?.artist || "Unknown"}\n\nDownloading...\n© ${botConfig.CAPTION || "Powered by Endroid"}`
+                caption: `🎵 *${data.title}*\n👤 ${data.artist || searchData?.artist || "Unknown"}\n\nDownloading...\n© ${botConfig.CAPTION || "Powered by Endroid-MD"}`
             }, { quoted: mek });
         }
 
@@ -1138,7 +1138,7 @@ cmd({
             audio: { url: data.dl },
             mimetype: "audio/mpeg",
             fileName,
-            caption: `🎵 *${data.title}*\n👤 ${data.artist || searchData?.artist || "Unknown"}\n\n© Endroid`
+            caption: `🎵 *${data.title}*\n👤 ${data.artist || searchData?.artist || "Unknown"}\n\n© Endroid-MD`
         }, { quoted: mek });
 
         await conn.sendMessage(from, { react: { text: "✅", key: m.key } });
@@ -1183,7 +1183,7 @@ cmd({
 
         await conn.sendMessage(from, {
             image: { url: videoInfo.thumbnail },
-            caption: `*📹 VIDEO DOWNLOADER*\n\n🎞️ *Title* ${videoInfo.title}\n📺 *Channel* ${videoInfo.author.name}\n🕒 *Duration* ${videoInfo.timestamp}\n\n*Status* Downloading Video...\n\n*© ${botConfig.CAPTION || "Powered by Endroid"}*`
+            caption: `*📹 VIDEO DOWNLOADER*\n\n🎞️ *Title* ${videoInfo.title}\n📺 *Channel* ${videoInfo.author.name}\n🕒 *Duration* ${videoInfo.timestamp}\n\n*Status* Downloading Video...\n\n*© ${botConfig.CAPTION || "Powered by Endroid-MD"}*`
         }, { quoted: mek });
 
         const apiUrl = `https://jawad-tech.vercel.app/download/ytdl?url=${encodeURIComponent(url)}`;
@@ -1197,7 +1197,7 @@ cmd({
 
         await conn.sendMessage(from, {
             video: { url: vid.mp4 },
-            caption: `🎞️ *${vid.title}*\n\n*© ${botConfig.CAPTION || "Powered by Endroid"}*`
+            caption: `🎞️ *${vid.title}*\n\n*© ${botConfig.CAPTION || "Powered by Endroid-MD"}*`
         }, { quoted: mek });
 
         await conn.sendMessage(from, { react: { text: '✅', key: m.key } });
@@ -1317,7 +1317,7 @@ cmd({
             audio: { url: data.streamUrl },
             mimetype: "audio/mpeg",
             ptt: false,
-            caption: `🎧 *${botConfig.BOT_NAME || "ENDROID"} Mp3 Downloader*\n\n🎵 *Title:* ${data.title}\n🕒 *Duration:* ${data.duration}\n\n*${botConfig.CAPTION || "Powered by Endroid"}*`,
+            caption: `🎧 *${botConfig.BOT_NAME || "ENDROID"} Mp3 Downloader*\n\n🎵 *Title:* ${data.title}\n🕒 *Duration:* ${data.duration}\n\n*${botConfig.CAPTION || "Powered by Endroid-MD"}*`,
             contextInfo: {
                 externalAdReply: {
                     title: data.title,
@@ -1371,7 +1371,7 @@ cmd({
 
         await conn.sendMessage(from, {
             image: { url: videoInfo.thumbnail },
-            caption: `*📹 VIDEO DOWNLOADER*\n\n🎞️ *Title* ${videoInfo.title}\n📺 *Channel* ${videoInfo.author.name}\n🕒 *Duration* ${videoInfo.timestamp}\n\n*Status* Downloading Video...\n\n*© ${botConfig.CAPTION || "Powered by Endroid"}*`
+            caption: `*📹 VIDEO DOWNLOADER*\n\n🎞️ *Title* ${videoInfo.title}\n📺 *Channel* ${videoInfo.author.name}\n🕒 *Duration* ${videoInfo.timestamp}\n\n*Status* Downloading Video...\n\n*© ${botConfig.CAPTION || "Powered by Endroid-MD"}*`
         }, { quoted: mek });
 
         const apiUrl = `https://jawad-tech.vercel.app/download/ytdl?url=${encodeURIComponent(url)}`;
@@ -1387,7 +1387,7 @@ cmd({
             document: { url: vid.mp4 },
             mimetype: "video/mp4",
             fileName: `${vid.title}.mp4`,
-            caption: `📄 *${vid.title}*\n\n*© ${botConfig.CAPTION || "Powered by Endroid"}*`
+            caption: `📄 *${vid.title}*\n\n*© ${botConfig.CAPTION || "Powered by Endroid-MD"}*`
         }, { quoted: mek });
 
         await conn.sendMessage(from, { react: { text: '✅', key: m.key } });
@@ -1531,7 +1531,7 @@ cmd({
             document: { url },
             mimetype: "application/octet-stream",
             fileName: fileName,
-            caption: `📦 *File Downloader*\n\n📄 ${fileName}\n\n© Endroid`
+            caption: `📦 *File Downloader*\n\n📄 ${fileName}\n\n© Endroid-MD`
         }, { quoted: mek });
 
         await conn.sendMessage(from, { react: { text: "✅", key: m.key } });
@@ -1644,7 +1644,7 @@ cmd({
 
                         await conn.sendMessage(sender, {
                             video: { url: data.result.mp4 },
-                            caption: `🎬 *${video.title}*\n\n> *${botConfig.CAPTION || "Powered by Endroid"}*`
+                            caption: `🎬 *${video.title}*\n\n> *${botConfig.CAPTION || "Powered by Endroid-MD"}*`
                         }, { quoted: received });
                     }
 

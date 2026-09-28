@@ -47,7 +47,7 @@ cmd({
         const botConfig = await getUserConfigFromMongoDB(bot) || { CAPTION: "POWERED BY ENDROID" };
         
         // JSON URL
-        const url = "https://raw.githubusercontent.com/wized2/Json-Data/refs/heads/main/AnimeVideos.json";
+        const url = "https://raw.githubusercontent.com/iTx-Sarkar/Json-Data/refs/heads/main/AnimeVideos.json";
         
         // Reaction
         await conn.sendMessage(from, { react: { text: "⏳", key: mek.key } });
@@ -94,7 +94,7 @@ cmd({
         const botConfig = await getUserConfigFromMongoDB(bot) || { CAPTION: "POWERED BY ENDROID" };
         
         // Raw GitHub file URL
-        const jsonUrl = "https://raw.githubusercontent.com/wized2/Json-Data/refs/heads/main/Asupan.json";
+        const jsonUrl = "https://raw.githubusercontent.com/iTx-Sarkar/Json-Data/refs/heads/main/Asupan.json";
 
         // Loading reaction
         await conn.sendMessage(from, { react: { text: "⏳", key: mek.key } });
@@ -141,7 +141,7 @@ cmd({
         const bot = conn.user.id.split(":")[0];
         const botConfig = await getUserConfigFromMongoDB(bot) || { CAPTION: "POWERED BY ENDROID" };
         
-        const jsonUrl = "https://raw.githubusercontent.com/wized2/Json-Data/refs/heads/main/Joker.json";
+        const jsonUrl = "https://raw.githubusercontent.com/iTx-Sarkar/Json-Data/refs/heads/main/Joker.json";
 
         // Initial reaction
         await conn.sendMessage(from, { react: { text: "⏳", key: mek.key } });
@@ -191,7 +191,7 @@ cmd({
         const bot = conn.user.id.split(":")[0];
         const botConfig = await getUserConfigFromMongoDB(bot) || { CAPTION: "POWERED BY ENDROID" };
         
-        const jsonUrl = "https://raw.githubusercontent.com/wized2/Json-Data/refs/heads/main/Loli.json";
+        const jsonUrl = "https://raw.githubusercontent.com/iTx-Sarkar/Json-Data/refs/heads/main/Loli.json";
 
         // Loading reaction
         await conn.sendMessage(from, { react: { text: "⏳", key: mek.key } });
@@ -237,7 +237,7 @@ cmd({
         const bot = conn.user.id.split(":")[0];
         const botConfig = await getUserConfigFromMongoDB(bot) || { CAPTION: "POWERED BY ENDROID" };
         
-        const jsonUrl = "https://raw.githubusercontent.com/wized2/Json-Data/refs/heads/main/Naruto.json";
+        const jsonUrl = "https://raw.githubusercontent.com/iTx-Sarkar/Json-Data/refs/heads/main/Naruto.json";
 
         // Initial reaction
         await conn.sendMessage(from, { react: { text: "⏳", key: mek.key } });
@@ -284,7 +284,7 @@ cmd({
         const bot = conn.user.id.split(":")[0];
         const botConfig = await getUserConfigFromMongoDB(bot) || { CAPTION: "POWERED BY ENDROID" };
 
-        const jsonUrl = "https://raw.githubusercontent.com/wized2/Json-Data/refs/heads/main/Sts.json";
+        const jsonUrl = "https://raw.githubusercontent.com/iTx-Sarkar/Json-Data/refs/heads/main/Sts.json";
 
         // Initial reaction
         await conn.sendMessage(from, { react: { text: "⏳", key: mek.key } });
@@ -332,7 +332,7 @@ cmd({
         const bot = conn.user.id.split(":")[0];
         const botConfig = await getUserConfigFromMongoDB(bot) || { CAPTION: "POWERED BY ENDROID" };
         
-        const jsonUrl = "https://raw.githubusercontent.com/wized2/Json-Data/refs/heads/main/demonSlayer.json";
+        const jsonUrl = "https://raw.githubusercontent.com/iTx-Sarkar/Json-Data/refs/heads/main/demonSlayer.json";
 
         // Initial react
         await conn.sendMessage(from, { react: { text: "⏳", key: mek.key } });
@@ -379,7 +379,7 @@ cmd({
         const bot = conn.user.id.split(":")[0];
         const botConfig = await getUserConfigFromMongoDB(bot) || { CAPTION: "POWERED BY ENDROID" };
         
-        const jsonUrl = "https://raw.githubusercontent.com/wized2/Json-Data/refs/heads/main/onePiece.json";
+        const jsonUrl = "https://raw.githubusercontent.com/iTx-Sarkar/Json-Data/refs/heads/main/onePiece.json";
 
         // Loading reaction
         await conn.sendMessage(from, { react: { text: "⏳", key: mek.key } });

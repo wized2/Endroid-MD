@@ -21,7 +21,7 @@ async function sendIslamicAudio(conn, from, mek, audioPath, title, body, reply) 
         externalAdReply: {
           title: title,
           body: body,
-          thumbnailUrl: "https://files.catbox.moe/kunzpz.png",
+          thumbnailUrl: "https://endroid-cdn.koyeb.app/edith/alive.jpg",
           mediaType: 1,
           renderLargerThumbnail: true
         }
@@ -84,7 +84,7 @@ bandah({
     conn, from, mek, 
     "islamic/ayat_ul_qursi.mp3", 
     "Ayatul Kursi 🕋", 
-    "Recitation of Ayatul Kursi — Endroid Islamic Collection",
+    "Recitation of Ayatul Kursi — Endroid-MD Islamic Collection",
     reply
   );
 });
@@ -102,7 +102,7 @@ bandah({
     conn, from, mek, 
     "media/beautiful-azan.mp3", 
     "Beautiful Azaan 🕌", 
-    "Recitation of Azaan — Endroid Islamic Collection",
+    "Recitation of Azaan — Endroid-MD Islamic Collection",
     reply
   );
 });
@@ -120,7 +120,7 @@ bandah({
     conn, from, mek, 
     "islamic/dua_e_kunoot.mp3", 
     "Dua-e-Kunoot 🕋", 
-    "Recitation of Dua-e-Kunoot — Endroid Islamic Collection",
+    "Recitation of Dua-e-Kunoot — Endroid-MD Islamic Collection",
     reply
   );
 });
@@ -240,7 +240,7 @@ bandah({
       contextInfo: {
         externalAdReply: {
           title: `Surah ${details.title_en} - ${details.title_ar}`,
-          body: "Endroid",
+          body: "Endroid-MD",
           mediaType: 1
         }
       }
@@ -307,7 +307,7 @@ ${ayahsText}
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
             newsletterJid: config.NEWSLETTER_JID,
-            newsletterName: 'Endroid',
+            newsletterName: 'Endroid-MD',
             serverMessageId: 143
           }
         }
@@ -349,7 +349,7 @@ bandah({
     conn, from, mek, 
     "islamic/durood-shareef.mp3", 
     "Durood Shareef 🕋", 
-    "Recitation of Durood Shareef — Endroid Islamic Collection",
+    "Recitation of Durood Shareef — Endroid-MD Islamic Collection",
     reply
   );
 });
@@ -408,7 +408,7 @@ Object.entries(kalmaData).forEach(([pattern, data]) => {
       conn, from, mek, 
       data.file, 
       data.title, 
-      `${data.title} — Endroid Islamic Collection`,
+      `${data.title} — Endroid-MD Islamic Collection`,
       reply
     );
   });
