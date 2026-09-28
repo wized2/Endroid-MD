@@ -35,6 +35,12 @@ command.js   # command registry
 
 See `config.js` and `.env.example`. Brand defaults: **Endroid-MD**.
 
+## Commands
+
+See [COMMANDS.md](COMMANDS.md) for the **full** alias list (not unique-only).
+
+Plugins live in `plugins/` (flat) and mirrored under `plugins/{category}/` + `plugins/_all/`.
+
 ## License
 
 MIT
