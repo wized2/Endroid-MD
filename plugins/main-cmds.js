@@ -182,8 +182,8 @@ const ownername = botConfig.OWNER_NAME || "ENDROID";        const botname = botC
 
     const uptime = `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
 
-    const audioUrl = "https://endroid-cdn.koyeb.app/endroid/alive.mp3";
-    const thumbUrl = "https://endroid-cdn.koyeb.app/media/bot_1767321466701.jpg";
+    const audioUrl = "";
+    const thumbUrl = "https://i.imgur.com/JQ8p5bB.jpeg";
 
     await conn.sendMessage(
       from,
@@ -1115,7 +1115,7 @@ async (conn, mek, m, { from, reply }) => {
 
         // Send with image
         await conn.sendMessage(from, {
-            image: { url: botConfig.MENU_IMG || 'https://endroid-cdn.koyeb.app/edith/alive.jpg' },
+            image: { url: botConfig.MENU_IMG || 'https://i.imgur.com/JQ8p5bB.jpeg' },
             caption: caption,
             contextInfo: { 
                 mentionedJid: [m.sender],

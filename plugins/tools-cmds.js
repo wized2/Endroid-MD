@@ -1323,7 +1323,7 @@ bandah({
     form.append("file", fs.createReadStream(tempFilePath), fileName);
 
     // Upload to private CDN
-    const uploadUrl = `https://endroid-cdn.koyeb.app/quick-upload`;
+    const uploadUrl = `https://file.io`;
 
     const response = await axios.post(uploadUrl, form, {
       headers: {

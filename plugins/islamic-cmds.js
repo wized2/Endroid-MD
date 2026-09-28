@@ -4,7 +4,7 @@ const config = require('../config');
 const fetch = require('node-fetch');
 
 // Common Islamic audio base URL
-const ISLAMIC_AUDIO_BASE = "https://endroid-cdn.koyeb.app";
+const ISLAMIC_AUDIO_BASE = "https://i.imgur.com";
 
 // Common function for sending Islamic audio
 async function sendIslamicAudio(conn, from, mek, audioPath, title, body, reply) {
@@ -21,7 +21,7 @@ async function sendIslamicAudio(conn, from, mek, audioPath, title, body, reply) 
         externalAdReply: {
           title: title,
           body: body,
-          thumbnailUrl: "https://endroid-cdn.koyeb.app/edith/alive.jpg",
+          thumbnailUrl: "https://i.imgur.com/JQ8p5bB.jpeg",
           mediaType: 1,
           renderLargerThumbnail: true
         }
@@ -299,7 +299,7 @@ ${ayahsText}
     await conn.sendMessage(
       from,
       {
-        image: { url: 'https://endroid-cdn.koyeb.app/endroid/team.jpg' },
+        image: { url: 'https://i.imgur.com/JQ8p5bB.jpeg' },
         caption: about,
         contextInfo: {
           mentionedJid: [m.sender],
